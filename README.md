@@ -25,6 +25,6 @@ npm run dev
 npm run build
 ```
 ## 其他
-－ 前端页面源码在src目录下，打包后在server/public目录下
-－ 后端server服务器在server目录下
-－ 部署时将打包后的前端资源及后端源码放到服务器上对应目录
+ - 前端页面源码在src目录下，打包后在server/public目录下
+ - 后端server服务器在server目录下
+ - 部署时将打包后的前端资源及后端源码放到服务器上对应目录
