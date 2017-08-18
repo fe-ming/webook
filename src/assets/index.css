@@ -1,0 +1,102 @@
+body {
+	overflow: hidden;
+}
+.no-grow {
+	flex-grow: 0 !important; 
+	flex-shrink: 0 !important;
+}
+.nav-left{
+	width: 250px;
+	height: -webkit-calc(100vh - 50px);
+	background: #eef1f6;
+	transition: margin .3s ease-in;
+}
+.nav-left > ul {
+	overflow-y: auto;
+    height: calc(100vh - 106px);
+}
+.nav-leader {
+	text-align: right;
+	padding-right: 10px;
+	background: #e4e8f1;
+	color: #20a0ff;
+	cursor: pointer;
+	line-height: 56px;
+	height: 56px;
+}
+.slide-left {
+  	margin-left: -200px;
+}
+.slide-right {
+	margin-right: -200px;
+}
+.content {
+	height: calc(100vh - 50px);
+    overflow: auto;
+    padding:5px 10px; 
+    transition: margin .3s ease-in;
+    -webkit-overflow-scrolling: touch;
+}
+.content h3 {
+	margin-top: 10px;
+}
+.note-item {
+	border:1px solid #d1dbe5;
+	border-radius: 5px;
+	background: #fff;
+	margin: 10px 0;
+}
+.note-item p, .note-item span {
+	line-height: 24px;
+}
+.note-item-pic img {
+	width: 100%;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.note-item-pic .el-tooltip, .note-item-pic .el-tooltip__rel{
+	width: 100%;
+}
+.note-item-text {
+	padding: 10px;
+}
+.tips-box {
+	color: #aaa;
+}
+.tips-box p {
+	margin-top: 20px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.tips-box li {
+	line-height: 30px;
+	font-size: 16px;
+}
+.image-viewer {
+	overflow: hidden;
+}
+.image-viewer .el-dialog__body {
+	overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+}
+.image-viewer .el-dialog__headerbtn {
+	float: none;
+}
+.image-viewer img {
+	height: calc(100vh - 60px);
+}
+@media only screen and (min-width: 768px) {
+	.slide-right {
+		margin-right: 0;
+	}
+	.content {
+		padding:20px 40px; 
+	}
+	.note-item {
+		display: flex;
+	}
+	.note-item > div {
+		flex: 1 1 500px;
+	}
+}

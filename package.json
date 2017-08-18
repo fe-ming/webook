@@ -1,0 +1,55 @@
+{
+  "name": "element-starter",
+  "description": "A Vue.js project",
+  "author": "vincent",
+  "private": true,
+  "scripts": {
+    "server": "node ./server/server",
+    "dev": "webpack-dev-server -d --inline --hot --env.dev",
+    "build": "rimraf server/public && webpack -p --progress --hide-modules"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "crypto": "0.0.3",
+    "element-ui": "^1.1.2",
+    "express": "^4.15.2",
+    "formidable": "^1.1.1",
+    "glob": "^7.1.1",
+    "gm": "^1.23.0",
+    "images": "^3.0.0",
+    "jade": "^1.11.0",
+    "mongojs": "^2.4.0",
+    "morgan": "^1.8.1",
+    "vue": "^2.1.8",
+    "webpack-dev-server": "^2.4.5",
+    "whatwg-fetch": "^2.0.3",
+    "winston": "^2.3.1",
+    "winston-mongodb": "^2.0.9"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.13.2",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.12.2",
+    "eslint-config-enough": "^0.2.2",
+    "eslint-loader": "^1.6.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.24.1",
+    "postcss-loader": "^1.2.1",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "vue-loader": "^10.0.0",
+    "vue-template-compiler": "^2.1.8",
+    "webpack": "^2.2.0-rc.4",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

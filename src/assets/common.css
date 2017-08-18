@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 14px;
+	font-family: 'Microsoft YaHei';
+	color: #1f2d3d;
+	background: -webkit-linear-gradient(left top, rgba(194,239,239,.15) , rgba(5,245,245,.15)); 
+	padding-top: 50px;
+}
+header {
+	background: url(./header-bg.jpg) 25% center no-repeat #fff;
+    background-size: cover;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+header img {
+	height: 50px;
+	position: absolute;
+	padding: 8px;
+}
+.header-nav {
+	display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    margin-left: 26px;
+    font-size: 16px;
+}
+.header-nav li{
+	padding: 0 14px;
+	border-left: 1px solid rgba(0,0,0,.1);
+	cursor: pointer;
+	display: inline-block;
+}
+.header-nav a {
+	color: #666;
+	text-decoration: none;
+}
+.header-nav li.active {
+	background: rgba(0,0,0,.2);
+}
+.header-nav a:hover, .header-nav li.active a {
+	color: #1f2d3d;
+}
+.header-title {
+	color: #c95e57;
+	font-weight: bold;
+	line-height: 50px;
+	margin-left: 55px;
+	font-family: fantasy;
+	font-size: 20px;
+}
+.flex-box {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.flex-box > div {
+	flex: 1 1 auto;
+}
+.clearfix:before,
+.clearfix:after {
+  	display: table;
+  	content: "";
+}
+.clearfix:after {
+  	clear: both;
+}
+.flex-column {
+	flex-direction: column !important;
+}
+.flex-column-reverse {
+	flex-direction: column-reverse !important;
+}
+.flex-columnReverse {
+	flex-direction: column-reverse !important;
+}
+.scroll-top {
+	position: fixed;
+    bottom: 30px;
+    right: 15px;
+    height: 30px;
+    width: 30px;
+    background: #e5e9f2;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 25px;
+    opacity: 0;
+    z-index: 999;
+}
+@media only screen and (min-width: 768px) {
+	.flex-box {
+		flex-direction: row
+	}
+	.content .flex-column {
+		flex-direction: row !important;
+	}
+	.content .flex-column-reverse {
+		flex-direction: row !important;
+	}
+}

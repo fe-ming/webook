@@ -1,0 +1,10 @@
+body {
+	overflow: auto;
+}
+.content {
+	height: auto;
+}
+.article-title p {
+	font-size: 14px;
+    color: #d1dbe5;
+}

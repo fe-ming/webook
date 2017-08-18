@@ -1,0 +1,96 @@
+a,div {
+	outline: none;
+}
+.container {
+	display: flex;
+	padding: 0px 20px;
+}
+.content {
+	flex: 1 1 960px;
+	flex-grow: 2;
+	margin:20px;
+}
+.aside-right {
+	flex: 1 1 480px;
+	flex-grow: 1;
+	margin:20px;
+}
+.aside-right .box-card {
+	position: fixed;
+	margin-right: 40px;
+}
+.content .el-select {
+    width: 200px;
+}
+.no-grow {
+	flex-grow: 0 !important; 
+}
+.content-layout-pic {
+	width: 100px;
+	padding: 5px;
+}
+.layout-item {
+	padding: 5px;
+	border:1px solid #ebebeb;
+	border-radius: 5px;
+	color: #999;
+	cursor: pointer;
+	margin: 10px 0;
+}
+.layout-item.active {
+	border:1px solid #20a0ff;
+}
+.content-layout img {
+	width: 100%;
+	vertical-align: middle;
+}
+.aside-right-title {
+	margin-bottom: 10px;
+}
+.content-animate .el-select {
+	width: 160px;
+}
+.note-item {
+	border:1px solid #d1dbe5;
+	border-radius: 5px;
+	background: #fff;
+	margin: 10px 0;
+}
+.note-item > div {
+	flex: 1 1 500px;
+}
+.note-item-pic {
+	border-right: 1px solid #ebebeb;
+}
+.note-item-pic img {
+	width: 100%;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.note-item-pic .el-tooltip, .note-item-pic .el-tooltip__rel{
+	width: 100%;
+}
+.note-item-text {
+	padding: 10px;
+	align-self: flex-start;
+}
+.empty-nots {
+	padding-top: 50px;
+	font-size: 28px;
+	color: #d1dbe5;
+	text-align: center;
+}
+.holder-text {
+
+}
+.fileElem {
+	height: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		display: block;
+	}
+}
