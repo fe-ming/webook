@@ -19,7 +19,7 @@ var tk = token.createToken({
 //mongojs
 var mongojs = require('mongojs');
 //var db = mongojs('admin:admin@127.0.0.1/webook?authSource=admin', ['article'])
-var db = mongojs('mongo:mongomininglamp@139.129.252.72:27017/webook?authSource=mlamp', ['article'])
+var db = mongojs('webook:webook59897b63@139.129.252.72:27017/webook?authSource=mlamp', ['article'])
 var fileSaveDir = '/usr/local/data/webook/';
 var fileSaveDir400 = '/usr/local/data/webook/400/';
 var fileSaveDir800 = '/usr/local/data/webook/800/';
