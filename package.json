@@ -21,6 +21,7 @@
     "jade": "^1.11.0",
     "mongojs": "^2.4.0",
     "morgan": "^1.8.1",
+    "officegen": "^0.4.5",
     "vue": "^2.1.8",
     "webpack-dev-server": "^2.4.5",
     "whatwg-fetch": "^2.0.3",

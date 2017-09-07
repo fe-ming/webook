@@ -71,8 +71,9 @@
           {{content.contentTitle}}
           <a v-bind:href="'/article.html#'+content._id" target="_blank">{{host + '/article.html#' + content._id}}</a>
           <div style="margin-top:5px;">
-            <el-button type="info" icon="edit" size="small" @click="editArticle(content._id)">编辑</el-button>
-            <el-button type="danger" icon="delete" size="small" @click="deleteArticle(content._id)">删除</el-button>
+            <el-button type="info" icon="edit" @click="editArticle(content._id)">编辑</el-button>
+            <el-button type="danger" icon="delete" @click="deleteArticle(content._id)">删除</el-button>
+            <el-button type="primary" @click="wordExport">导出word</el-button>
           </div>
         </h3>
         <div class='tips-box' v-if="!content._id">
@@ -96,6 +97,8 @@
 </template>
 
 <script>
+var wordExport = require('wordExport')
+var jQuery =  require('jQuery')
 export default {
   data () {
     return {
@@ -181,6 +184,10 @@ export default {
           message: '已取消删除'
         });          
       });
+    },
+    wordExport: function() {
+      var title = this.content.contentTitle + new Date().getTime();
+      jQuery(".content").wordExport(title);
     }
   }
 }

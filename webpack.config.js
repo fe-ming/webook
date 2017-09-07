@@ -102,7 +102,10 @@ module.exports = (options = {}) => ({
   ].concat(plugins),
   resolve: {
     alias: {
-      '~': resolve(__dirname, 'src')
+      '~': resolve(__dirname, 'src'),
+      'jQuery': resolve(__dirname, 'src/assets/plugins/jquery-2.1.4.min.js'),
+      'FileSaver': resolve(__dirname, 'src/assets/plugins/FileSaver.js'),
+      'wordExport': resolve(__dirname, 'src/assets/plugins/jquery.wordexport.js')
     }
   },
   externals: {
